@@ -7,6 +7,8 @@
     <Authors>TonyGiang</Authors>
     <Description>An extension method to cast reference types in a functional-style syntax. A part of the C# Language Syntactic Sugar suite.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/tonygiang/CLSS.ExtensionMethods.Object.As</RepositoryUrl>
+    <PackageTags>CLSS</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
