@@ -4,7 +4,7 @@
 
 In order to make a cast during a functional-style call chain, you can do it in 2 ways:
 
-```
+```csharp
 using Newtonsoft.Json.Linq;
 
 var targetProperties1 = ((JObject)((JArray)JToken.Parse(rawJSON)
@@ -23,7 +23,7 @@ Both syntaxes break the flow of reading code from left to right and make logical
 
 This package provides `As<T>` extension method as a functional equivalence to the `as` syntax to maintain consistent LTR reading flow and be friendly to the functional syntax. The above piece of code can be rewritten as follows:
 
-```
+```csharp
 using CLSS.
 using Newtonsoft.Json.Linq;
 
@@ -35,7 +35,7 @@ var targetProperties = JToken.Parse(rawJSON)
 
 Due to the limitation in the type system of C#, `As<T>` is limited to using reference types. Passing a value type to the type parameter will cause a compilation error. Note that this limitation is strictly for the type parameter. You can still use value types as the caller of `As<T>`.
 
-```
+```csharp
 using CLSS;
 
 int number = 5;
